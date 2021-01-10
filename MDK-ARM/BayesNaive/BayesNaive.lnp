@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"bayesnaive\startup_stm32f030x8.o"
+"bayesnaive\main.o"
+"bayesnaive\stm32f0xx_it.o"
+"bayesnaive\stm32f0xx_hal_msp.o"
+"bayesnaive\stm32f0xx_hal_tim.o"
+"bayesnaive\stm32f0xx_hal_tim_ex.o"
+"bayesnaive\stm32f0xx_hal_rcc.o"
+"bayesnaive\stm32f0xx_hal_rcc_ex.o"
+"bayesnaive\stm32f0xx_hal.o"
+"bayesnaive\stm32f0xx_hal_i2c.o"
+"bayesnaive\stm32f0xx_hal_i2c_ex.o"
+"bayesnaive\stm32f0xx_hal_gpio.o"
+"bayesnaive\stm32f0xx_hal_dma.o"
+"bayesnaive\stm32f0xx_hal_cortex.o"
+"bayesnaive\stm32f0xx_hal_pwr.o"
+"bayesnaive\stm32f0xx_hal_pwr_ex.o"
+"bayesnaive\stm32f0xx_hal_flash.o"
+"bayesnaive\stm32f0xx_hal_flash_ex.o"
+"bayesnaive\system_stm32f0xx.o"
+"bayesnaive\arm_gaussian_naive_bayes_predict_f32.o"
+"bayesnaive\arm_max_f32.o"
+--library_type=microlib --strict --scatter "BayesNaive\BayesNaive.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BayesNaive.map" -o BayesNaive\BayesNaive.axf
